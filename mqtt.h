@@ -51,7 +51,7 @@ void InitAT(){
   //切换MQTT的协议版本，否则会被拒绝连接 
   sendDebug(" AT+QMTCFG=\"version\",0,4 ");
   //MQTT服务器地址和端口号
-  sendDebug("AT+QMTOPEN=0,\"129.28.200.181\",1883 ");
+  sendDebug("AT+QMTOPEN=0,\"129.28.200.*\",1883 ");
   delay(500); 
   //MQTT客户端号
   sendDebug("AT+QMTCONN=0,\"525716215\"");
